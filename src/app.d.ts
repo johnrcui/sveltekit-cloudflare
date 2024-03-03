@@ -6,7 +6,15 @@ declare global {
 		// interface Locals {}
 		// interface PageData {}
 		// interface PageState {}
-		// interface Platform {}
+    interface Platform {
+      env: {
+        KV: KVNamespace;
+        DB: D1Database;
+        BUCKET: R2Bucket;
+      };
+      context: EventContext;
+      caches: CacheStorage & { default: Cache };
+    }
 	}
 }
 
