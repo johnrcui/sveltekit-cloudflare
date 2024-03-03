@@ -13,6 +13,7 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240222.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-cloudflare": "^4.1.0",
 		"@sveltejs/kit": "^2.0.0",
@@ -32,5 +33,15 @@
 		"vite": "^5.0.3",
 		"vitest": "^1.2.0"
 	},
-	"type": "module"
+	"type": "module",
+	"optionalDependencies": {
+		"@miniflare/cache": "^2.14.2",
+		"@miniflare/d1": "^2.14.2",
+		"@miniflare/kv": "^2.14.2",
+		"@miniflare/r2": "^2.14.2",
+		"@miniflare/shared": "^2.14.2",
+		"@miniflare/storage-file": "^2.14.2",
+		"@miniflare/storage-memory": "^2.14.2",
+		"better-sqlite3": "^9.4.3"
+	}
 }
